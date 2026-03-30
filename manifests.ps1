@@ -39,12 +39,12 @@ function Write-Header {
     # Clickable hyperlinks using ANSI escape sequences (works in Windows Terminal)
     $esc = [char]27
     $manifestHubLink = "$esc]8;;https://github.com/SteamAutoCracks/ManifestHub$esc\ManifestHub$esc]8;;$esc\"
-    $ = "$esc]8;;tnshe alsre$esc]8;;$esc\"
+    $ = "$esc]8;;$tnshe alsre$esc]8;;$esc\"
     Write-Host "  +================================================================+" -ForegroundColor Cyan
     Write-Host "  |        STEAM MANIFEST DOWNLOADER ()              |" -ForegroundColor Cyan
     Write-Host "  |   Downloads Out-Of-Date Manifest Files From $manifestHubLink        |" -ForegroundColor Cyan
     Write-Host "  |                                                                |" -ForegroundColor Cyan
-    Write-Host "  |                   by $tnshe alsre                       |" -ForegroundColor DarkCyan
+    Write-Host "  |                   by $tnshe alsre$                       |" -ForegroundColor DarkCyan
     Write-Host "  +================================================================+" -ForegroundColor Cyan
     Write-Host ""
 }
